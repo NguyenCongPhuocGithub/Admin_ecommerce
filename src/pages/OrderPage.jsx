@@ -39,7 +39,7 @@ import moment from "moment";
 import "moment/locale/vi";
 moment.locale("vi");
 
-import styles from "./stylesPage/Orderpage.module.scss";
+import styles from "./stylesPage/OrderPage.module.scss";
 const { Panel } = Collapse;
 const { Option } = Select;
 const DEFAULT_LIMIT = 8;
