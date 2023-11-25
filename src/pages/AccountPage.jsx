@@ -1,5 +1,5 @@
 import { useCallback, useState, useEffect } from "react";
-import styles from "../pages/stylesPage/Accountpage.module.css";
+import styles from "../pages/stylesPage/AccountPage.module.css";
 import {
   Card,
   Divider,
