@@ -1,0 +1,152 @@
+.main_box {
+    display: flex;
+    column-gap: 10px;
+
+    .menu {
+        width: 65%;
+        .title_menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .cart {
+                display: none;
+            }
+        }
+
+        .item {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            padding: 6px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.3s;
+            }
+
+            .content {
+                margin-top: 10px;
+                text-align: center;
+                text-justify: auto;
+
+                .name {
+                    height: 100px;
+                }
+
+                .price {
+                    font-size: 140%;
+                    font-weight: bold;
+                    display: flex;
+                    align-items:end;
+                    column-gap: 10px;
+                    justify-content: center;
+
+                    p {
+                        color: #E31837;
+                    }
+
+                    small {
+                        color: #FFC522;
+                    }
+                }
+            }
+        }
+    }
+
+    .order {
+        width: 35%;
+        .title_order {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .item_cart {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .item_name {
+                width: 70%;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border: "1px solid #A8A8A8";
+                    border-radius: 10px;
+                    margin-right: 10px;
+                }
+            }
+            .item_action {
+                width: 30%;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.filter {
+    width: 100%;
+}
+
+.pagination {
+    text-align: center;
+    margin: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Tạo đổ bóng khi hover */
+}
+
+.item:hover>img {
+    transform: scale(1.1);
+    /* Phóng to hình ảnh khi hover */
+}
+
+/* CSS cho trạng thái tablet */
+@media only screen and (max-width: 768px) {
+    .main_box {
+        display: inline-block;
+
+        .menu {
+            width: 100%;
+            .title_menu {
+                .cart {
+                    display: flex;
+                    position: relative;
+                    .icon {
+                        color: #1677FF;
+                        font-size: 200%;
+                        margin-right: 15px;
+                    }
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        background-color: #E31837;
+                        border-radius: 50%;
+                        width: 20px;
+                        height: 20px;
+                        color: white;
+                        right: 0;
+                        font-size: 80%;
+                    }
+                }
+                
+            }
+            
+        }
+        .order {
+            display: none;
+        }
+    }
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 430px) {
+
+}

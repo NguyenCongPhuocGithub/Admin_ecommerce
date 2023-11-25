@@ -1,0 +1,31 @@
+
+.name_customer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    .avatar {
+        width: 60px !important;
+        height: 60px;
+        border: 1px solid #A8A8A8;
+        margin-right: 6px;
+        border-radius: 50%;
+    }
+}
+
+.money {
+    text-align: right;
+}
+
+.pagination {
+    text-align: center;
+    margin: 10px;
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 430px) {
+    .avatar {
+        display: none;
+    }
+}

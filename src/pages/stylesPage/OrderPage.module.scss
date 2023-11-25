@@ -1,0 +1,41 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .action {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-right: 6px;
+        }
+    }
+}
+
+.chartContainer {
+    width: 0%;
+    height: 80vh;
+}
+
+.pagination {
+    text-align: center;
+    margin: 10px;
+}
+svg {
+    width: 100%;
+}
+
+/* CSS cho trạng thái tablet */
+@media only screen and (max-width: 768px) {
+    .custom_table {
+        margin: 10px;
+    }
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 430px) {
+    .custom_table {
+        padding: 0px;
+    }
+}

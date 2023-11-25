@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .header_middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #A8A8A8;
+        padding: 5px 25px;
+        height: 100px;
+
+        .header_left {
+            display: flex;
+            align-items: center;
+
+            .header_logo {
+                width: 80px;
+                margin-right: 20px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+        }
+
+        .header_right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 160%;
+                margin-right: 30px;
+            }
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+        }
+    }
+    .nav {
+        position: absolute;
+        top: 110px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.1rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .nav {
+        display: block !important;
+        
+    }
+    .header_left i {
+        display: none;
+    }
+}
+
+/* CSS cho trạng thái tablet và mobile */
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .header_left i {
+        display: block;
+    }
+}

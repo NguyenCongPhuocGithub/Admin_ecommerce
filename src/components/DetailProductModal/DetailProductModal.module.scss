@@ -1,0 +1,28 @@
+.detail {
+    display: flex;
+    width: 100%;
+    column-gap: 8px;
+    .thumb {
+        width: 60%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .content {
+        width: 40%;
+        line-height: 1.8;
+        .name {
+            // color: #FFC522;
+            font-size: 140%;
+        }
+        .money {
+            display: flex;
+            align-items: center;
+            p:last-child {
+                margin-left: 20px;
+            }
+            
+        }
+    }
+}

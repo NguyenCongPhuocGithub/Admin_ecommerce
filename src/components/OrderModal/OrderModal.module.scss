@@ -1,0 +1,87 @@
+.form_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.act {
+    .delete_cart {
+        display: none;
+    }
+    .order_create {
+        text-align: right;
+        float: right;
+    }
+}
+table {
+    tbody {
+        .name_product {
+            display: flex;
+            align-items: center;
+
+            .detail_product {
+                display: flex;
+                align-items: center;
+
+                .thumb {
+                    height: 60px;
+                    width: 60px;
+                    border: 1px solid #A8A8A8;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* CSS cho trạng thái tablet */
+@media only screen and (max-width: 768px) {
+    table {
+        tbody {
+            .name_product {
+                display: flex;
+                align-items: center;
+
+                .detail_product {
+                    display: inline-block;
+                    text-align: center;
+
+                    .thumb {
+                        height: 60px;
+                        width: 60px;
+                        border: 1px solid #A8A8A8;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form_item {
+        p {
+            width: 450px;
+            text-align: right;
+        }
+    }
+    .act {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .delete_cart {
+            display: block;
+        }   
+    }
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 430px) {
+    .form_item {
+        p {
+            width: 200px;
+            text-align: right;
+        }
+    }
+}

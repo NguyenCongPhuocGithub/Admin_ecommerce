@@ -1,0 +1,33 @@
+.background {
+    background-color: #FFC522;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .box_login {
+        background-color: #FFFFFF;
+        max-width: 300px;
+        border-radius: 35px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        img {
+            width: 60%;
+            height: auto !important;
+            margin: 10px auto !important;
+        }
+        a {
+            font-size: 90%;
+        }
+
+    }
+}
+@media only screen and (max-width: 320px) {
+    .box_login {
+        width: 280px;
+    }
+}

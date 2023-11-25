@@ -1,0 +1,60 @@
+.top_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.box_left {
+    width: 60%;
+    border-right: 1px solid #F0F0F0;
+}
+
+.box_right {
+    width: 40%;
+    text-align: center;
+}
+
+.box_right>img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.loading {
+    text-align: center;
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 430px) {
+    .tittle {
+        width: 60%;
+    }
+    .box_right>img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+}
+/* CSS cho trạng thái mobile S*/
+@media only screen and (max-width: 320px) {
+    .tittle {
+        width: 40%;
+    }
+    .content {
+     display: inline-block;   
+    }
+    .box_left{
+        width: 100%;
+        border-right: none;
+    }
+    .box_right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

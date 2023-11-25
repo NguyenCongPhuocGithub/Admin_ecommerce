@@ -1,0 +1,49 @@
+
+
+.name_category {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    .thumb {
+        width: auto;
+        height: 60px;
+        border: 1px solid #A8A8A8;
+        margin-right: 16px;
+        border-radius: 10px;
+    }
+}
+
+.pagination {
+    text-align: center;
+    margin: 10px;
+}
+
+.action_colum {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    justify-content: center;
+}
+
+/* CSS cho trạng thái tablet */
+@media only screen and (max-width: 768px) {
+    .action_colum {
+        display: inline-block;
+
+        button:first-child {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .name_category {
+        display: block;
+        text-align: center;
+        .thumb {
+            margin-right: 0;
+        }
+    }
+}

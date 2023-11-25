@@ -1,0 +1,19 @@
+.hiddenColumn {
+    display: none;
+}
+
+.action {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter {
+    width: 100%;
+}
+
+.pagination {
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,114 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+
+    .box_left {
+        width: 30%;
+
+        .employee {
+            margin-top: 20px;
+        }
+    }
+
+    .box_right {
+        width: 70%;
+        text-align: center;
+        justify-content: space-evenly;
+
+        .table {
+            width: 100%;
+
+            tr:first-child {
+                text-align: center;
+            }
+
+            td:first-child {
+                text-align: left;
+            }
+
+            td:last-child {
+                text-align: right;
+                width: 100px;
+            }
+
+            td:nth-child(3) {
+                text-align: right;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                text-align: left;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid #A8A8A8;
+                    border-radius: 10px;
+                    margin-right: 10px
+                }
+            }
+        }
+    }
+}
+
+.loading {
+    text-align: center;
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 430px) {
+    .title {
+        display: inline-block;
+        font-size: 95%;
+    }
+
+    .content {
+        width: 100%;
+        display: block;
+
+        .box_left {
+            width: 100%;
+            display: flex;
+            column-gap: 10px;
+            text-align: start;
+
+            // justify-content: space-between;
+            .customer {
+                width: 50%;
+            }
+
+            .employee {
+                width: 50%;
+                margin-top: 0;
+            }
+
+        }
+
+        .box_right {
+            width: 100% !important;
+            margin-top: 20px;
+
+            .table {
+
+                span {
+                    display: inline-block;
+                    text-align: center;
+
+                    img {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

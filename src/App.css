@@ -1,0 +1,20 @@
+/* CSS cho trạng thái laptop */
+@media only screen and (max-width: 1440px) {
+  .container {
+    margin: 10px 10px 10px 240px;
+  }
+}
+
+/* CSS cho trạng thái tablet */
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+}
+
+/* CSS cho trạng thái mobile */
+@media only screen and (max-width: 425px) {
+  .container {
+    margin: 10px;
+  }
+}
